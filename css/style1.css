@@ -1,0 +1,203 @@
+body {
+  background: url("../staff/img/background.png") no-repeat;
+  background-size: cover; }
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 40%; }
+
+header {
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 100%; }
+
+nav.centered {
+  text-align: center;
+  color: white;
+  line-height: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+nav.centered a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+nav.centered a:hover {
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+img {
+  width: 70%;
+  margin-left: 10%; }
+
+.hovno {
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+
+.hovno1 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+
+.hovno2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+
+.hovno3 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+
+.textcontent {
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px; }
+
+/* --MOBILE-- */
+@supports (grid-area: auto) {
+  @media screen and (max-width: 500px) {
+    body {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(8, 12.8%);
+      grid-template-areas: "header" "centered" "hovno" "box1" "box2" "box3" "hovno1" "vox1" "vox2" "vox3" "hovno2" "kox1" "kox2" "kox3" "hovno3" "lox1" "lox2" "lox3" "textcontent"; }
+
+    .header {
+      grid-area: header; }
+
+    .centered {
+      grid-area: centered; }
+
+    .hovno {
+      grid-area: hovno;
+      text-align: center; }
+
+    .box1 {
+      grid-area: box1; }
+
+    .box2 {
+      grid-area: box2; }
+
+    .box3 {
+      grid-area: box3; }
+
+    .hovno1 {
+      grid-area: hovno1;
+      text-align: center; }
+
+    .vox1 {
+      grid-area: vox1; }
+
+    .vox2 {
+      grid-area: vox2; }
+
+    .vox3 {
+      grid-area: vox3; }
+
+    .hovno2 {
+      grid-area: hovno2;
+      text-align: center; }
+
+    .kox1 {
+      grid-area: kox1; }
+
+    .kox2 {
+      grid-area: kox2; }
+
+    .kox3 {
+      grid-area: kox3; }
+
+    .hovno3 {
+      grid-area: hovno3;
+      text-align: center; }
+
+    .lox1 {
+      grid-area: 1ox1; }
+
+    .lox2 {
+      grid-area: 1ox2; }
+
+    .lox3 {
+      grid-area: 1ox3; }
+
+    .textcontent {
+      grid-area: textcontent;
+      margin-top: 10px; } } }
+/* ---DESKTOP--- */
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: "header header header" "centered centered centered" "hovno hovno hovno" "box1 box2 box3" "hovno1 hovno1 hovno1" "vox1 vox2 vox3" "hovno2 hovno2 hovno2" "kox1 kox2 kox3" "hovno3 hovno3 hovno3" "lox1 lox2 lox3" "textcontent textcontent textcontent"; }
+
+  .header {
+    grid-area: header;
+    text-align: center; }
+
+  .centered {
+    grid-area: centered; }
+
+  .hovno {
+    grid-area: hovno;
+    text-align: center; }
+
+  .box1 {
+    grid-area: box1; }
+
+  .box2 {
+    grid-area: box2; }
+
+  .box3 {
+    grid-area: box3; }
+
+  .hovno1 {
+    grid-area: hovno1;
+    text-align: center; }
+
+  .vox1 {
+    grid-area: vox1; }
+
+  .vox2 {
+    grid-area: vox2; }
+
+  .vox3 {
+    grid-area: vox3; }
+
+  .hovno2 {
+    grid-area: hovno2;
+    text-align: center; }
+
+  .kox1 {
+    grid-area: kox1; }
+
+  .kox2 {
+    grid-area: kox2; }
+
+  .kox3 {
+    grid-area: kox3; }
+
+  .hovno3 {
+    grid-area: hovno3;
+    text-align: center; }
+
+  .lox1 {
+    grid-area: 1ox1; }
+
+  .lox2 {
+    grid-area: 1ox2; }
+
+  .lox3 {
+    grid-area: 1ox3; }
+
+  .textcontent {
+    grid-area: textcontent; } }
+
+/*# sourceMappingURL=style1.css.map */
