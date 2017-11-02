@@ -1,5 +1,5 @@
 body {
-  background:url("../staff/img/background.png")no-repeat;
+  background:url("../staff/img/background.png")repeat;
   background-size: cover;
 }
 
@@ -53,53 +53,17 @@ img {
 }
 
 
-/* --MOBILE-- */
-@supports (grid-area: auto) {
+.one {
+  margin: 2em 0;
+  width: 70%;
+  margin-left: 8%;
+}
+.hh{
+  width: 50%;
+  text-align: center;
 
-  @media screen and (max-width: 500px ) {
-
-    body {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(8, 12.8%);
-      grid-template-areas: "header"
-      "centered"
-      "box1"
-      "box2"
-      "box3"
-      "textcontent"; }
-    .header{
-      grid-area: header;
-    }
-
-    .centered {
-      grid-area: centered;
-    }
-
-    .box1 {
-      grid-area: box1;
-    }
-
-    .box2 {
-      grid-area: box2;
-    }
-
-    .box3 {
-      grid-area: box3;
-    }
-
-    .textcontent {
-      grid-area: textcontent;
-      margin-top: 10px;
-    }
-
-
-  }
 }
 
-
-
-/* ---DESKTOP--- */
 @media screen and (min-width: 1000px) {
   body {
     display: grid;
@@ -108,6 +72,7 @@ img {
     grid-template-areas: "header header header"
     "centered centered centered"
     "box1 box2 box3"
+    "map map map"
     "textcontent textcontent textcontent";
   }
 
@@ -132,12 +97,61 @@ img {
   .box3 {
     grid-area: box3;
   }
-
+  .map {
+    grid-area: map;
+    text-align: center;
+  }
   .textcontent {
     grid-area: textcontent;
   }
 
 }
 
+@supports (grid-area: auto) {
 
+  @media screen and (max-width: 500px ) {
+
+    body {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(8, 12.8%);
+      grid-template-areas: "header"
+      "centered"
+      "box1"
+      "box2"
+      "box3"
+      "map"
+      "textcontent"; }
+    .header{
+      grid-area: header;
+    }
+
+    .centered {
+      grid-area: centered;
+    }
+
+    .box1 {
+      grid-area: box1;
+    }
+
+    .box2 {
+      grid-area: box2;
+    }
+
+    .box3 {
+      grid-area: box3;
+    }
+    .map {
+      grid-area: map;
+      text-align: center;
+    }
+
+    .textcontent {
+      grid-area: textcontent;
+      margin-top: 10px;
+    }
+
+
+  }
+}
 
