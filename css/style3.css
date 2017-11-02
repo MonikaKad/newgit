@@ -1,0 +1,51 @@
+body {
+  background: url("../staff/img/background.png") no-repeat;
+  background-size: cover; }
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 40%; }
+
+header {
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 100%; }
+
+nav.centered {
+  text-align: center;
+  color: white;
+  line-height: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+nav.centered a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+nav.centered a:hover {
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+img {
+  width: 100%; }
+
+.textcontent {
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px; }
+
+.hovno {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1f4c45;
+  text-align: center; }
+
+/*# sourceMappingURL=style3.css.map */
