@@ -1,0 +1,100 @@
+body {
+  background: url("../staff/img/background.png") no-repeat;
+  background-size: cover; }
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 40%; }
+
+header {
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 100%; }
+
+nav.centered {
+  text-align: center;
+  color: white;
+  line-height: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+nav.centered a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+nav.centered a:hover {
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+img {
+  width: 100%; }
+
+.textcontent {
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px; }
+
+/* --MOBILE-- */
+@supports (grid-area: auto) {
+  @media screen and (max-width: 500px) {
+    body {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(8, 12.8%);
+      grid-template-areas: "header" "centered" "box1" "box2" "box3" "textcontent"; }
+
+    .header {
+      grid-area: header; }
+
+    .centered {
+      grid-area: centered; }
+
+    .box1 {
+      grid-area: box1; }
+
+    .box2 {
+      grid-area: box2; }
+
+    .box3 {
+      grid-area: box3; }
+
+    .textcontent {
+      grid-area: textcontent;
+      margin-top: 10px; } } }
+/* ---DESKTOP--- */
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: "header header header" "centered centered centered" "box1 box2 box3" "textcontent textcontent textcontent"; }
+
+  .header {
+    grid-area: header;
+    text-align: center; }
+
+  .centered {
+    grid-area: centered; }
+
+  .box1 {
+    grid-area: box1; }
+
+  .box2 {
+    grid-area: box2; }
+
+  .box3 {
+    grid-area: box3; }
+
+  .textcontent {
+    grid-area: textcontent; } }
+
+/*# sourceMappingURL=style2.css.map */
