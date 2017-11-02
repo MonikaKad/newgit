@@ -68,7 +68,7 @@ img {
   body {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(5, 25%);
     grid-template-areas: "header header header"
     "centered centered centered"
     "box1 box2 box3"
@@ -114,7 +114,7 @@ img {
     body {
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(8, 12.8%);
+      grid-template-rows: repeat(7, 12.8%);
       grid-template-areas: "header"
       "centered"
       "box1"
